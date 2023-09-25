@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "katleyq.github.io"
+  title: "waaazzzzaaaa"
   navbar:
     left:
       - href: index.qmd
@@ -14,7 +14,8 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: full
 
 editor: visual
 
