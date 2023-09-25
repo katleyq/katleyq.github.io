@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Kat Le (she/they)",
@@ -26,5 +19,12 @@
     "title": "Kat Le (she/they)",
     "section": "Education",
     "text": "Education\nBS Biological Sciences, University of California, Santa Barbara (2019)\nMaster of Environmental Data Science"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
