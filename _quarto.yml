@@ -7,12 +7,17 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: home
+      - href: about.qmd
+        text: about
+      - href: resources.qmd
+        text: resources
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: lux
+      dark: lux
     css: styles.css
     toc: false
     page-layout: full
