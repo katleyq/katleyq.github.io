@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+
+// Colors 
+$dark-green: #043714;
+$blue: #1A5EAF;
+$black: #060B11;
+$light-blue: #A5BFDE;
+$white: #EFEFEF;
+
+
+// base document colors
+$navbar-bg: $light-blue;
+$navbar-fg: $blue;
+$body-bg: $white;
+$foot-bg: $white;
+$link-color: $dark-green;
+
+/*-- scss: rules --*/
+h1, h2 {
+  letter-spacing: 5px;
+  color: $dark-green;
+}
+
+.title {
+  color: red;
+}
+
+.center-text {
+  text-align: center;
+}
