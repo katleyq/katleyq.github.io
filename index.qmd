@@ -3,7 +3,7 @@ title: "Kat Le (she/they)"
 image: "images/Kat_Le.png"
 toc: false
 about: 
-  template: trestles
+  template: solana
   image-shape: round
   image-width: 15em
   links:
