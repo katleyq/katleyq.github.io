@@ -11,7 +11,7 @@
     "href": "index.html#about-me",
     "title": "Kat Le (she/they)",
     "section": "About me",
-    "text": "About me\nKat Le is a Master of Environmental Data Science student, who is interested in applying advanced technology to solving environmental problems and teaching others how to do the same. As an undergraduate at the University of California Santa Barbara, they expanded their knowledge of environmental systems through obtaining a bachelor's degree in Biological Sciences. Their curiosity and appetite for learning led them to participate in multiple research projects, where they got to deepen their understanding of the biological, chemical, and physical drivers of kelp forest ecosystems. After college, they served as the lead lab technician for a Department of Energy research project studying the potential of giant kelp as a biofuel. Through their many years of research experience, they found their passion for learning new technology to analyze environmental data. As a data fellow for the Environmental Data Initiative, they moved to a remote biological field station in Pennsylvania, where they designed and built workflows for managing the station's sensor data. \nIn addition to being a student now, they have been working as a staff member at Bren, where they have been strengthening their technical knowledge by working in research and education information technology. They have been excited to help students and researchers utilize and troubleshoot technology for their coursework and research projects. Promoting equal access to education is central to Kat's mission, and they hope to use their technical skill-set and knowledge about environmental systems to foster an inclusive learning space for the newest generation of environmental scientists."
+    "text": "About me\nKat Le is a Master of Environmental Data Science student, who is interested in applying advanced technology to solving environmental problems and teaching others how to do the same. As an undergraduate at the University of California Santa Barbara, they expanded their knowledge of environmental systems through obtaining a bachelor’s degree in Biological Sciences. Their curiosity and appetite for learning led them to participate in multiple research projects, where they got to deepen their understanding of the biological, chemical, and physical drivers of kelp forest ecosystems. After college, they served as the lead lab technician for a Department of Energy research project studying the potential of giant kelp as a biofuel. Through their many years of research experience, they found their passion for learning new technology to analyze environmental data. As a data fellow for the Environmental Data Initiative, they moved to a remote biological field station in Pennsylvania, where they designed and built workflows for managing the station’s sensor data. \nIn addition to being a student now, they have been working as a staff member at Bren, where they have been strengthening their technical knowledge by working in research and education information technology. They have been excited to help students and researchers utilize and troubleshoot technology for their coursework and research projects. Promoting equal access to education is central to Kat’s mission, and they hope to use their technical skill-set and knowledge about environmental systems to foster an inclusive learning space for the newest generation of environmental scientists."
   },
   {
     "objectID": "index.html#education",
@@ -26,5 +26,47 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "My first blog post\n\n\n\nquarto\n\n\nmeds\n\n\nworkshop\n\n\n\nI’m gonna tell you all about my blog\n\n\n\nKat Le\n\n\nOct 23, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/2023-10-23-my-first-post/index.html",
+    "href": "blog/2023-10-23-my-first-post/index.html",
+    "title": "My first blog post",
+    "section": "",
+    "text": "Here is some really1 exciting text."
+  },
+  {
+    "objectID": "blog/2023-10-23-my-first-post/index.html#this-is-my-first-section",
+    "href": "blog/2023-10-23-my-first-post/index.html#this-is-my-first-section",
+    "title": "My first blog post",
+    "section": "",
+    "text": "Here is some really1 exciting text."
+  },
+  {
+    "objectID": "blog/2023-10-23-my-first-post/index.html#this-is-my-second-section",
+    "href": "blog/2023-10-23-my-first-post/index.html#this-is-my-second-section",
+    "title": "My first blog post",
+    "section": "This is my second section",
+    "text": "This is my second section\nI love blogging so much.2"
+  },
+  {
+    "objectID": "blog/2023-10-23-my-first-post/index.html#footnotes",
+    "href": "blog/2023-10-23-my-first-post/index.html#footnotes",
+    "title": "My first blog post",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is my first footnote.↩︎\nthis is an inline footnote↩︎"
+  },
+  {
+    "objectID": "blog/2023-10-23-my-first-post/index.html#my-third-section",
+    "href": "blog/2023-10-23-my-first-post/index.html#my-third-section",
+    "title": "My first blog post",
+    "section": "My third section",
+    "text": "My third section\nI read some really cool stuff at this resource (Csik 2022).\nI’m citing another resource here.(Gaynor et al. 2022)"
   }
 ]
