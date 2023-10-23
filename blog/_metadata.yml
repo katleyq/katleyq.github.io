@@ -1,0 +1,5 @@
+# enables banner style title blocks to all posts inside blog folder
+title-blog-banner: true
+
+# freeze ouputs from code chunks. will only run if there are any changes
+freeze: auto

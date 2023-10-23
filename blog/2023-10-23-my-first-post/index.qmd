@@ -1,0 +1,34 @@
+---
+title: "My first blog post"
+description: "I'm gonna tell you all about my blog"
+author: 
+  - name: Kat Le
+    url: https://katleyq.github.io/
+    affiliation: MEDS
+    affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science/academics-meds
+date: 10-23-2023
+categories: [quarto, meds, workshop]
+bibliography: references.bib
+citation:
+  url: https://katleyq.github.io/blog/2023-10-23-my-first-post/
+image: preview.jpg
+draft: false #set to true if you want it to be a draft. you can send link to people, but it won't show up
+---
+
+## This is my first section
+
+Here is some really[^1] exciting text.
+
+[^1]: This is my first footnote.
+
+## This is my second section
+
+I love blogging so much.[^2]
+
+[^2]: this is an inline footnote
+
+## My third section
+
+I read some really cool stuff at this resource [@csik2022].
+
+I'm citing another resource here.[@gaynor2022]
