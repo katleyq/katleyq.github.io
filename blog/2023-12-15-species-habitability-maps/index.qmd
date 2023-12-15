@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Background
 
-One of the biggest challenges our generation is facing the effects of the Great Acceleration [@steffen2015]. With advancements in technology, humans are living longer, and the population is growing at an exponential rate. In addition, our planet's climate is changing due to the atmosphere is being loaded with greenhouse gases. One outcome of this phenomenon is that we need to meet the food demands of a growing population and we need to do it while limiting our carbon footprint.
+\_
 
 Marine aquaculture has the potential to be an important sustainable food source to meet food demands, while limiting our carbon footprint. To build out the marine aquaculture industry, it is important to\_
 
@@ -30,7 +30,7 @@ This project aims to do the following:
 # Data
 
 | Data type                | Source                                                                                                                                                                                                                                                                                                                                                        |
-|----------------|--------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Sea Surface Temperature  | I will use average annual sea surface temperature (SST) from the years 2008 to 2012 to characterize the average sea surface temperature within the region. The data I am working with was originally generated from [NOAA's 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php). |
 | Bathymetry (Depth)       | To characterize the depth of the ocean, I will use the [General Bathymetric Chart of the Oceans (GEBCO)](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#area).[^1]                                                                                                                                                                          |
 | Exclusive Economic Zones | I will be designating maritime boundaries using Exclusive Economic Zones off of the west coast of US from [Marineregions.org](https://www.marineregions.org/eez.php).                                                                                                                                                                                         |
