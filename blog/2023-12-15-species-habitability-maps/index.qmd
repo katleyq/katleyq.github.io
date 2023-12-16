@@ -1,6 +1,6 @@
 ---
-title: "Species suitability maps for marine aquaculture"
-description: "Finding suitable locations for marine aquaculture"
+title: "Building species suitability maps for marine aquaculture plans"
+description: "Finding optimal locations for marine aquaculture"
 author: "Kat Le"
 date: "2023-12-14"
 output: html_document
@@ -13,24 +13,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Background
 
-\_
+Scientists have projected that the human population will grow to 9.7 billion people by 2050 [@godfray2010]. As the global population grows, global food demand continues to grow at the same rate. Agricultural expansion has been crucial to meeting this food demand; however, the impacts of agricultural intensification has been detrimental to our ecosystem [@tilman2011]. Land clearing, fertilizer use, and greenhouse gas emissions via agricultural practices have contributed to species habitat loss, global warming, and the overconsumption and pollution of our water sources. It is imperative that we find new, sustainable ways to meet the food demand of a growing global population to mitigate disastrous downstream effects of current agricultural practices.
 
-Marine aquaculture has the potential to be an important sustainable food source to meet food demands, while limiting our carbon footprint. To build out the marine aquaculture industry, it is important to\_
+Marine aquaculture has the potential to be an important sustainable food source to meet global food demands, while limiting our carbon footprint and saving water [@gentry2017a]. As a cool example of the benefits of marine aquaculture, scientists are developing ways to farm seaweed to use as a food source for humans, a potential biofuel for energy generation, and an ingredient for cosmetic products [@kübler2021] [@kraan2010] [@couteau2016]. In addition to the versatile potential of seaweed, some species of seaweed can grow 1 foot per day under ideal conditions [@reed2008]. That's so cool to me! One thing you should know about me is that I LOVE seaweed. There are so many benefits to seaweed aquaculture, and perhaps one of the most advantageous aspects is that you don't need to water seaweed. I could go on about seaweed for days, but the important takeaway here is that marine aquaculture has the potential to be an important path forward in finding sustainable ways to feed a growing population.
+
+In order to build out the marine aquaculture industry, it is important to find suitable locations for the marine species that we plan to farm. The overarching goal of this project is to fill this need and create a reproducible workflow for identifying optimal locations for aquaculture.
 
 # Project Objectives
 
 This project aims to do the following:
 
-1.  Find optimal locations for aquaculture within West Coast Exclusive Economic Zones using oysters as a model.
+1.  Find optimal locations for marine aquaculture using oysters as a model.
 
-2.  Create a species suitability map for oysters of habitable area that displays total suitable area and percent suitable area by West Coast EEZ.
+2.  Find potential for marine aquaculture within each West Coast Exclusive Economic Zone.
 
-3.  Build a product that outputs a species suitablity map by West Coast EEZs when users input a species name, suitable temperature range, and suitable depth range.
+3.  Build a product that outputs a species suitability map by West Coast EEZs when users input a species name, suitable temperature range, and suitable depth range of a particular species.
 
-# Data
+# Data Details
 
 | Data type                | Source                                                                                                                                                                                                                                                                                                                                                        |
-|------------------|------------------------------------------------------|
+|------------|-----------------------------------------------------------|
 | Sea Surface Temperature  | I will use average annual sea surface temperature (SST) from the years 2008 to 2012 to characterize the average sea surface temperature within the region. The data I am working with was originally generated from [NOAA's 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php). |
 | Bathymetry (Depth)       | To characterize the depth of the ocean, I will use the [General Bathymetric Chart of the Oceans (GEBCO)](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#area).[^1]                                                                                                                                                                          |
 | Exclusive Economic Zones | I will be designating maritime boundaries using Exclusive Economic Zones off of the west coast of US from [Marineregions.org](https://www.marineregions.org/eez.php).                                                                                                                                                                                         |
@@ -39,7 +41,7 @@ This project aims to do the following:
 
 # Method
 
-This section will show the steps I took to complete the objectives above. In additions to the steps, I build in checkpoints along the way to make the debugging process easier when I apply this workflow to other projects.
+This section will show the steps I took to complete the objectives above. In additions to the steps I outline below, I always build in checkpoints along the way to make the debugging process easier when I apply this workflow to other projects. These checkpoints are hidden, but I'm happy to share how I build in these checkpoints.
 
 ### Preparing the data
 
@@ -74,7 +76,7 @@ bathymetry <- rast("/Users/katle/Desktop/Desktop - kat’s MacBook Air/github/sp
 
 ### Processing Data
 
-Now that we have our West Coast EEZ regions, SST, and depth data loaded, we can begin process the data. I'll need to convert the temperature to Celsius, crop the data, and resample so that we have matching resolutions.
+Now that we have our West Coast EEZ regions, SST, and depth data loaded, we can begin to process the data. I'll need to convert the temperature to Celsius, crop the data, and resample so that we have matching resolutions.
 
 ```{r include=TRUE}
 # find the mean sst from 2008-2012 then convert from kelvin to celsius
@@ -148,7 +150,7 @@ percentage_suitable_area <- left_join(wc_eez, total_suitable_area,
 
 ### Visualizing results
 
-Now, I will create maps of both total suitable area and percent suitable area for oysters by west coast EEZ regions. For aesthetics, I included a base map of all western US states. All my maps are made using the R package, ggplot2.
+Now, I will create maps of both total suitable area and percent suitable area for oysters by west coast EEZ regions. For aesthetics, I include a base map of all western US states. All my maps are made using the R package, ggplot2.
 
 This is the map for total suitable area:
 
@@ -198,7 +200,7 @@ percent_suitability_map
 
 ### Building a function to apply this workflow to other species
 
-This is the part that I'm most excited about! Using the steps I laid out above, I created a function that will take in a species name, the suitable temperature range, and the suitable depth range. The function will output a map of both total suitable area and percent suitable area of the species that the user names. Then I stitch those maps together using the R package, patchwork. The result is a single plot with all of the information from above. Creating this function will help me reproduce the results for any species I want, which is a huge time-saver!
+This is the part that I'm most excited about! Using the steps I laid out above, I'm building a reproducible workflow. I created a function that will take in a species name, the suitable temperature range, and the suitable depth range. The function will output a map of both total suitable area and percent suitable area of the species that the user names. Then I stitch those maps together using the R package, patchwork. The result is a single plot with all of the information from above. Creating this function will help me reproduce the results for any species I want, which is a huge time-saver!
 
 ```{r include=TRUE, warning=FALSE, message=FALSE, results = FALSE}
 # creating function to apply to different species 
@@ -290,3 +292,11 @@ species_suitability("California Rockfish", temp_min = 12.78, temp_max = 20, dept
 ```
 
 # Conclusion
+
+I really enjoyed building out this reproducible workflow for identifying suitable locations for marine aquaculture by species. I hope to continue building out this workflow and producing higher resolution maps for species suitability. Check back later to see what I'm cooking up in the geospatial kitchen!
+
+Roll the credits,
+
+Kat
+
+# Literature Cited

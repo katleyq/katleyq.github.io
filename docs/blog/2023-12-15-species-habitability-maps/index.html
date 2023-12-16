@@ -8,9 +8,9 @@
 
 <meta name="author" content="Kat Le">
 <meta name="dcterms.date" content="2023-12-14">
-<meta name="description" content="Finding suitable locations for marine aquaculture">
+<meta name="description" content="Finding optimal locations for marine aquaculture">
 
-<title>Kat Le - Species suitability maps for marine aquaculture</title>
+<title>Kat Le - Building species suitability maps for marine aquaculture plans</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,7 +57,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -125,14 +144,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">about</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resources.html" rel="" target="">
- <span class="menu-text">resources</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../blog.html" rel="" target="">
  <span class="menu-text">blog</span></a>
   </li>  
@@ -154,12 +165,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Species suitability maps for marine aquaculture</h1>
+<h1 class="title">Building species suitability maps for marine aquaculture plans</h1>
 </div>
 
 <div>
   <div class="description">
-    Finding suitable locations for marine aquaculture
+    Finding optimal locations for marine aquaculture
   </div>
 </div>
 
@@ -188,20 +199,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="background" class="level1">
 <h1>Background</h1>
-<p>_</p>
-<p>Marine aquaculture has the potential to be an important sustainable food source to meet food demands, while limiting our carbon footprint. To build out the marine aquaculture industry, it is important to_</p>
+<p>Scientists have projected that the human population will grow to 9.7 billion people by 2050 <span class="citation" data-cites="godfray2010">(<a href="#ref-godfray2010" role="doc-biblioref">Godfray et al. 2010</a>)</span>. As the global population grows, global food demand continues to grow at the same rate. Agricultural expansion has been crucial to meeting this food demand; however, the impacts of agricultural intensification has been detrimental to our ecosystem <span class="citation" data-cites="tilman2011">(<a href="#ref-tilman2011" role="doc-biblioref">Tilman et al. 2011</a>)</span>. Land clearing, fertilizer use, and greenhouse gas emissions via agricultural practices have contributed to species habitat loss, global warming, and the overconsumption and pollution of our water sources. It is imperative that we find new, sustainable ways to meet the food demand of a growing global population to mitigate disastrous downstream effects of current agricultural practices.</p>
+<p>Marine aquaculture has the potential to be an important sustainable food source to meet global food demands, while limiting our carbon footprint and saving water <span class="citation" data-cites="gentry2017a">(<a href="#ref-gentry2017a" role="doc-biblioref">Gentry et al. 2017</a>)</span>. As a cool example of the benefits of marine aquaculture, scientists are developing ways to farm seaweed to use as a food source for humans, a potential biofuel for energy generation, and an ingredient for cosmetic products <span class="citation" data-cites="kübler2021">(<a href="#ref-kübler2021" role="doc-biblioref">Kübler, Dudgeon, and Bush 2021</a>)</span> <span class="citation" data-cites="kraan2010">(<a href="#ref-kraan2010" role="doc-biblioref">Kraan 2010</a>)</span> <span class="citation" data-cites="couteau2016">(<a href="#ref-couteau2016" role="doc-biblioref">Couteau and Coiffard 2016</a>)</span>. In addition to the versatile potential of seaweed, some species of seaweed can grow 1 foot per day under ideal conditions <span class="citation" data-cites="reed2008">(<a href="#ref-reed2008" role="doc-biblioref">Reed, Rassweiler, and Arkema 2008</a>)</span>. That’s so cool to me! One thing you should know about me is that I LOVE seaweed. There are so many benefits to seaweed aquaculture, and perhaps one of the most advantageous aspects is that you don’t need to water seaweed. I could go on about seaweed for days, but the important takeaway here is that marine aquaculture has the potential to be an important path forward in finding sustainable ways to feed a growing population.</p>
+<p>In order to build out the marine aquaculture industry, it is important to find suitable locations for the marine species that we plan to farm. The overarching goal of this project is to fill this need and create a reproducible workflow for identifying optimal locations for aquaculture.</p>
 </section>
 <section id="project-objectives" class="level1">
 <h1>Project Objectives</h1>
 <p>This project aims to do the following:</p>
 <ol type="1">
-<li><p>Find optimal locations for aquaculture within West Coast Exclusive Economic Zones using oysters as a model.</p></li>
-<li><p>Create a species suitability map for oysters of habitable area that displays total suitable area and percent suitable area by West Coast EEZ.</p></li>
-<li><p>Build a product that outputs a species suitablity map by West Coast EEZs when users input a species name, suitable temperature range, and suitable depth range.</p></li>
+<li><p>Find optimal locations for marine aquaculture using oysters as a model.</p></li>
+<li><p>Find potential for marine aquaculture within each West Coast Exclusive Economic Zone.</p></li>
+<li><p>Build a product that outputs a species suitability map by West Coast EEZs when users input a species name, suitable temperature range, and suitable depth range of a particular species.</p></li>
 </ol>
 </section>
-<section id="data" class="level1">
-<h1>Data</h1>
+<section id="data-details" class="level1">
+<h1>Data Details</h1>
 <table class="table">
 <thead>
 <tr class="header">
@@ -227,7 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="method" class="level1">
 <h1>Method</h1>
-<p>This section will show the steps I took to complete the objectives above. In additions to the steps, I build in checkpoints along the way to make the debugging process easier when I apply this workflow to other projects.</p>
+<p>This section will show the steps I took to complete the objectives above. In additions to the steps I outline below, I always build in checkpoints along the way to make the debugging process easier when I apply this workflow to other projects. These checkpoints are hidden, but I’m happy to share how I build in these checkpoints.</p>
 <section id="preparing-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="preparing-the-data">Preparing the data</h3>
 <p>To start, I’ll need to load all the necessary packages and read in our data.</p>
@@ -258,7 +270,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="processing-data" class="level3">
 <h3 class="anchored" data-anchor-id="processing-data">Processing Data</h3>
-<p>Now that we have our West Coast EEZ regions, SST, and depth data loaded, we can begin process the data. I’ll need to convert the temperature to Celsius, crop the data, and resample so that we have matching resolutions.</p>
+<p>Now that we have our West Coast EEZ regions, SST, and depth data loaded, we can begin to process the data. I’ll need to convert the temperature to Celsius, crop the data, and resample so that we have matching resolutions.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># find the mean sst from 2008-2012 then convert from kelvin to celsius</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>mean_sst_celsius <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">app</span>(all_sst, mean) <span class="sc">-</span> <span class="fl">273.15</span></span>
@@ -326,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="visualizing-results" class="level3">
 <h3 class="anchored" data-anchor-id="visualizing-results">Visualizing results</h3>
-<p>Now, I will create maps of both total suitable area and percent suitable area for oysters by west coast EEZ regions. For aesthetics, I included a base map of all western US states. All my maps are made using the R package, ggplot2.</p>
+<p>Now, I will create maps of both total suitable area and percent suitable area for oysters by west coast EEZ regions. For aesthetics, I include a base map of all western US states. All my maps are made using the R package, ggplot2.</p>
 <p>This is the map for total suitable area:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load in us state boundaries for aesthetics</span></span>
@@ -378,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="building-a-function-to-apply-this-workflow-to-other-species" class="level3">
 <h3 class="anchored" data-anchor-id="building-a-function-to-apply-this-workflow-to-other-species">Building a function to apply this workflow to other species</h3>
-<p>This is the part that I’m most excited about! Using the steps I laid out above, I created a function that will take in a species name, the suitable temperature range, and the suitable depth range. The function will output a map of both total suitable area and percent suitable area of the species that the user names. Then I stitch those maps together using the R package, patchwork. The result is a single plot with all of the information from above. Creating this function will help me reproduce the results for any species I want, which is a huge time-saver!</p>
+<p>This is the part that I’m most excited about! Using the steps I laid out above, I’m building a reproducible workflow. I created a function that will take in a species name, the suitable temperature range, and the suitable depth range. The function will output a map of both total suitable area and percent suitable area of the species that the user names. Then I stitch those maps together using the R package, patchwork. The result is a single plot with all of the information from above. Creating this function will help me reproduce the results for any species I want, which is a huge time-saver!</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating function to apply to different species </span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>species_suitability <span class="ot">&lt;-</span> <span class="cf">function</span>(species, temp_min, temp_max, depth_min, depth_max) {</span>
@@ -472,12 +484,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
+<p>I really enjoyed building out this reproducible workflow for identifying suitable locations for marine aquaculture by species. I hope to continue building out this workflow and producing higher resolution maps for species suitability. Check back later to see what I’m cooking up in the geospatial kitchen!</p>
+<p>Roll the credits,</p>
+<p>Kat</p>
+</section>
+<section id="literature-cited" class="level1">
+
+
 
 
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Literature Cited</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-couteau2016" class="csl-entry" role="listitem">
+Couteau, C., and L. Coiffard. 2016. <span>“Seaweed Application in Cosmetics.”</span> In, 423–41. Elsevier. <a href="https://doi.org/10.1016/b978-0-12-802772-1.00014-2">https://doi.org/10.1016/b978-0-12-802772-1.00014-2</a>.
+</div>
+<div id="ref-gentry2017a" class="csl-entry" role="listitem">
+Gentry, Rebecca R., Halley E. Froehlich, Dietmar Grimm, Peter Kareiva, Michael Parke, Michael Rust, Steven D. Gaines, and Benjamin S. Halpern. 2017. <span>“Mapping the Global Potential for Marine Aquaculture.”</span> <em>Nature Ecology &amp; Evolution</em> 1 (9): 1317–24. <a href="https://doi.org/10.1038/s41559-017-0257-9">https://doi.org/10.1038/s41559-017-0257-9</a>.
+</div>
+<div id="ref-godfray2010" class="csl-entry" role="listitem">
+Godfray, H. Charles J., John R. Beddington, Ian R. Crute, Lawrence Haddad, David Lawrence, James F. Muir, Jules Pretty, Sherman Robinson, Sandy M. Thomas, and Camilla Toulmin. 2010. <span>“Food Security: The Challenge of Feeding 9 Billion People.”</span> <em>Science</em> 327 (5967): 812–18. <a href="https://doi.org/10.1126/science.1185383">https://doi.org/10.1126/science.1185383</a>.
+</div>
+<div id="ref-kraan2010" class="csl-entry" role="listitem">
+Kraan, Stefan. 2010. <span>“Mass-Cultivation of Carbohydrate Rich Macroalgae, a Possible Solution for Sustainable Biofuel Production.”</span> <em>Mitigation and Adaptation Strategies for Global Change</em> 18 (1): 27–46. <a href="https://doi.org/10.1007/s11027-010-9275-5">https://doi.org/10.1007/s11027-010-9275-5</a>.
+</div>
+<div id="ref-kübler2021" class="csl-entry" role="listitem">
+Kübler, Janet E., Steven R. Dudgeon, and Douglas Bush. 2021. <span>“Climate Change Challenges and Opportunities for Seaweed Aquaculture in California, the United States.”</span> <em>Journal of the World Aquaculture Society</em> 52 (5): 1069–80. <a href="https://doi.org/10.1111/jwas.12794">https://doi.org/10.1111/jwas.12794</a>.
+</div>
+<div id="ref-reed2008" class="csl-entry" role="listitem">
+Reed, Daniel C., Andrew Rassweiler, and Katie K. Arkema. 2008. <span>“BIOMASS RATHER THAN GROWTH RATE DETERMINES VARIATION IN NET PRIMARY PRODUCTION BY GIANT KELP.”</span> <em>Ecology</em> 89 (9): 2493–2505. <a href="https://doi.org/10.1890/07-1106.1">https://doi.org/10.1890/07-1106.1</a>.
+</div>
+<div id="ref-tilman2011" class="csl-entry" role="listitem">
+Tilman, David, Christian Balzer, Jason Hill, and Belinda L. Befort. 2011. <span>“Global Food Demand and the Sustainable Intensification of Agriculture.”</span> <em>Proceedings of the National Academy of Sciences</em> 108 (50): 20260–64. <a href="https://doi.org/10.1073/pnas.1116437108">https://doi.org/10.1073/pnas.1116437108</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>GEBCO Compilation Group (2022) GEBCO_2022 Grid (<a href="doi:10.5285/e0f0bb80-ab44-2739-e053-6c86abc0289c" class="uri">doi:10.5285/e0f0bb80-ab44-2739-e053-6c86abc0289c</a>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
