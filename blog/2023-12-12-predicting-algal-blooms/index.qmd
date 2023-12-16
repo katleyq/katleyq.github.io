@@ -3,7 +3,7 @@ title: "Factors influencing algal growth in aquatic systems"
 description: "Predicting algal blooms using NTL LTER data"
 author: "Kat Le"
 date: "Dec 15, 2023"
-format: pdf
+format: html
 bibliography: references.bib
 ---
 
