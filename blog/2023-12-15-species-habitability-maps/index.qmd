@@ -32,7 +32,7 @@ This project aims to do the following:
 # Data Details
 
 | Data type                | Source                                                                                                                                                                                                                                                                                                                                                        |
-|----------------|--------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Sea Surface Temperature  | I will use average annual sea surface temperature (SST) from the years 2008 to 2012 to characterize the average sea surface temperature within the region. The data I am working with was originally generated from [NOAA's 5km Daily Global Satellite Sea Surface Temperature Anomaly v3.1](https://coralreefwatch.noaa.gov/product/5km/index_5km_ssta.php). |
 | Bathymetry (Depth)       | To characterize the depth of the ocean, I will use the [General Bathymetric Chart of the Oceans (GEBCO)](https://www.gebco.net/data_and_products/gridded_bathymetry_data/#area).[^1]                                                                                                                                                                          |
 | Exclusive Economic Zones | I will be designating maritime boundaries using Exclusive Economic Zones off of the west coast of US from [Marineregions.org](https://www.marineregions.org/eez.php).                                                                                                                                                                                         |
@@ -294,9 +294,5 @@ species_suitability("California Rockfish", temp_min = 12.78, temp_max = 20, dept
 # Conclusion
 
 I really enjoyed building out this reproducible workflow for identifying suitable locations for marine aquaculture by species. I hope to continue building out this workflow and producing higher resolution maps for species suitability. Check back later to see what I'm cooking up in the geospatial kitchen!
-
-Roll the credits,
-
-Kat
 
 # Literature Cited
