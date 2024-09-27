@@ -10,9 +10,11 @@ about:
     - text: LinkedIn
       href: https://www.linkedin.com/in/katherine-le/
       icon: linkedin
+      target: _blank
     - text: GitHub
       href: https://github.com/katleyq
       icon: github
+      target: _blank
     - text: Email
       href: mailto::kat@bren.ucsb.edu
       icon: envelope
