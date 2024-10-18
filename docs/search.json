@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Factors influencing algal growth in aquatic systems\n\n\nPredicting algal blooms using NTL LTER data\n\n\n\nKat Le\n\n\nDec 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding species suitability maps for marine aquaculture plans\n\n\nFinding optimal locations for marine aquaculture\n\n\n\nKat Le\n\n\nDec 14, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Factors influencing algal growth in aquatic systems\n\n\nPredicting algal blooms using NTL LTER data\n\n\n\nKat Le\n\n\nDec 15, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -12,20 +12,6 @@
     "title": "About",
     "section": "",
     "text": "About me:"
-  },
-  {
-    "objectID": "blog/2023-12-15-species-habitability-maps/index.html",
-    "href": "blog/2023-12-15-species-habitability-maps/index.html",
-    "title": "Building species suitability maps for marine aquaculture plans",
-    "section": "",
-    "text": "Scientists have projected that the human population will grow to 9.7 billion people by 2050 (Godfray et al. 2010). As the global population grows, global food demand continues to grow at the same rate. Agricultural expansion has been crucial to meeting this food demand; however, the impacts of agricultural intensification has been detrimental to our ecosystem (Tilman et al. 2011). Land clearing, fertilizer use, and greenhouse gas emissions via agricultural practices have contributed to species habitat loss, global warming, and the over-consumption and pollution of our water sources. It is imperative that we find new, sustainable ways to meet the food demand of a growing global population to mitigate disastrous downstream effects of current agricultural practices.\nMarine aquaculture has the potential to be an important sustainable food source to meet global food demands, while limiting our carbon footprint and saving water (Gentry et al. 2017). As a cool example of the benefits of marine aquaculture, scientists are developing ways to farm seaweed to use as a food source for humans, a potential biofuel for energy generation, and an ingredient for cosmetic products (Kübler, Dudgeon, and Bush 2021) (Kraan 2010) (Couteau and Coiffard 2016). In addition to the versatile potential of seaweed, some species of seaweed can grow 1 foot per day under ideal conditions (Reed, Rassweiler, and Arkema 2008). That’s so cool to me! One thing you should know about me is that I LOVE seaweed. There are so many benefits to seaweed aquaculture, and perhaps one of the most advantageous aspects is that you don’t need to water seaweed. I could go on about seaweed for days, but the important takeaway here is that marine aquaculture has the potential to be an important path forward in finding sustainable ways to feed a growing population.\nIn order to build out the marine aquaculture industry, it is important to find suitable locations for the marine species that we plan to farm. The overarching goal of this project is to fill this need and create a reproducible workflow for identifying optimal locations for aquaculture."
-  },
-  {
-    "objectID": "blog/2023-12-15-species-habitability-maps/index.html#footnotes",
-    "href": "blog/2023-12-15-species-habitability-maps/index.html#footnotes",
-    "title": "Building species suitability maps for marine aquaculture plans",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nGEBCO Compilation Group (2022) GEBCO_2022 Grid (doi:10.5285/e0f0bb80-ab44-2739-e053-6c86abc0289c).↩︎"
   },
   {
     "objectID": "index.html",
