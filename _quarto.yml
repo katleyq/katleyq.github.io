@@ -4,21 +4,26 @@ project:
 
 website:
   title: "Kat Le"
+  favicon: images/logo.png
   navbar:
+    logo: images/logo.png
     left:
       - href: index.qmd
         text: home
       - href: blog.qmd
         text: blog
+  page-footer:
+    background: light
+    right: This website is built with {{< fa brands github title= "github icon" >}} Github.
 
 format:
   html:
     theme: 
       light: lux
       dark: lux
-    css: styles.css
     toc: false
     page-layout: full
+    #mainfont: Montserrat
 
 editor: visual
 

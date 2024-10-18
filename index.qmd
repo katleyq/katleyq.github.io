@@ -3,18 +3,16 @@ title: "Kat Le (she/they)"
 image: "images/Kat_Le.png"
 toc: false
 about: 
-  template: solana
+  template: trestles
   image-shape: round
   image-width: 15em
   links:
     - text: LinkedIn
       href: https://www.linkedin.com/in/katherine-le/
       icon: linkedin
-      target: _blank
     - text: GitHub
       href: https://github.com/katleyq
       icon: github
-      target: _blank
     - text: Email
       href: mailto::kat@bren.ucsb.edu
       icon: envelope
