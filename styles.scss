@@ -4,24 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
 
 // Colors 
-$dark-green: #043714;
-$blue: #1A5EAF;
-$black: #060B11;
-$light-blue: #A5BFDE;
-$white: #EFEFEF;
+$color1: #FFB300;
+$color2: #FEF1C7;
+$color3: #656565f;
+$color4: #4C3B4D;
+$color5: #7392B7;
+$color6: #759EB8;
+
 
 
 // base document colors
-$navbar-bg: $light-blue;
-$navbar-fg: $blue;
-$body-bg: $white;
-$foot-bg: $white;
-$link-color: $dark-green;
+$navbar-bg: $color1;
+$navbar-fg: $color2;
+$body-bg: $color2;
+$foot-bg: $color2;
+$link-color: $color5;
 
 /*-- scss: rules --*/
 h1, h2 {
   letter-spacing: 5px;
-  color: $dark-green;
+  color: $color1;
 }
 
 .title {
@@ -31,3 +33,6 @@ h1, h2 {
 .center-text {
   text-align: center;
 }
+
+// can add font families in scss rules
+// .navbar-brand img {} to change size of logo in navbar 
