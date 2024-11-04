@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
 
 // Colors 
-$color1: #FFB300;
-$color2: #FEF1C7;
-$color3: #656565f;
+$color1: #FEF1C7;
+$color2: #FFB300;
+$color3: #656565;
 $color4: #4C3B4D;
 $color5: #7392B7;
 $color6: #759EB8;
@@ -16,7 +16,7 @@ $color6: #759EB8;
 // base document colors
 $navbar-bg: $color1;
 $navbar-fg: $color2;
-$body-bg: $color2;
+$body-bg: $color1;
 $foot-bg: $color2;
 $link-color: $color5;
 
@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 .title {
-  color: red;
+  color: $color3;
 }
 
 .center-text {
