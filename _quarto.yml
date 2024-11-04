@@ -10,17 +10,19 @@ website:
     left:
       - href: index.qmd
         text: home
+      - href: about.qmd
+        text: about me
       - href: blog.qmd
         text: blog
   page-footer:
-    background: light
+    background: $color1
     right: This website is built with {{< fa brands github title= "github icon" >}} Github.
 
 format:
   html:
     theme: 
-      light: lux
-      dark: lux
+      light: [lux, styles.scss]
+      dark: [lux, styles.scss]
     toc: false
     page-layout: full
     #mainfont: Montserrat
