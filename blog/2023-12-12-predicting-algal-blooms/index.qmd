@@ -4,6 +4,7 @@ description: "Predicting algal blooms using NTL LTER data"
 author: "Kat Le"
 date: "Dec 15, 2023"
 format: html
+draft: true
 bibliography: references.bib
 ---
 
@@ -24,7 +25,7 @@ For this project, I am interested in the effects of available nutrients, water t
 I used data collected by the [North Temperate Lakes LTER](https://lter.limnology.wisc.edu/) and stored in the [Environmental Data Initiative](https://portal.edirepository.org/nis/home.jsp) (EDI) repository. I utilized data from 7 study lakes in Northern Wisconsin, where NTL LTER has been collecting data since 1981 until December 2022. The sites I chose were the study sites with the longest-running data: Crystal Bog, Trout Bog, Crystal Lake, Big Muskellunge, Sparking Lake, Allequash Lake, and Trout Lake. These lakes vary in physical dimensions, sources of water, shoreline development, and elevation.
 
 |                         | Crystal Bog | Trout Bog | Crystal Lake | Big Muskellunge | Sparking Lake | Allequash Lake | Trout Lake |
-|-------------------------|-------------|-----------|--------------|-----------------|---------------|----------------|------------|
+|---------|---------|---------|---------|---------|---------|---------|---------|
 | *Latitude*              | 46.008      | 46.041    | 46.003       | 46.021          | 46.008        | 46.038         | 46.029     |
 | *Longitude*             | -89.606     | -89.686   | -89.612      | -89.612         | -89.701       | -89.621        | -89.665    |
 | *Area (ha)*             | 0.6         | 1         | 37.5         | 363.4           | 63.7          | 164.2          | 1565.1     |

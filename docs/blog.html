@@ -76,9 +76,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -169,29 +169,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1702627200000" data-listing-file-modified-sort="1728666658121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16">
-<a href="./blog/2023-12-12-predicting-algal-blooms/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/2023-12-12-predicting-algal-blooms/images/IMG_5340.JPG" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Factors influencing algal growth in aquatic systems
-</h5>
-<div class="card-text listing-description">
-Predicting algal blooms using NTL LTER data
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Kat Le
-</div>
-<div class="listing-date">
-Dec 15, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
