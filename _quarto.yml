@@ -21,8 +21,12 @@ website:
 format:
   html:
     theme: 
-      light: [lux, styles.scss]
-      dark: [lux, styles.scss]
+      light: 
+        - lux
+        - styles.scss
+      dark: 
+        - lux 
+        - styles.scss
     toc: false
     page-layout: full
 
