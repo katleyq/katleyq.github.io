@@ -25,7 +25,6 @@ format:
       dark: [lux, styles.scss]
     toc: false
     page-layout: full
-    #mainfont: Montserrat
 
 editor: visual
 
