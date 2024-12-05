@@ -15,8 +15,6 @@ jupyter:
     language: python
 ---
 
-## Geospatial Analysis of Thomas Fire Burn Area (2017)
-
 ![Thomas Fire at Faria Beach](Thomas-Fire-Faria-Beach.jpg)
 
 Photo Credit: [Ray Ford, Noozhawk](https://news.ucsb.edu/2023/021283/thomas-fire-research-reveals-ash-can-fertilize-oceans)
