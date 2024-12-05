@@ -2,6 +2,7 @@
 title: Geospatial analysis of Thomas Fire Burn Area (2017)
 author: Kat Le
 date: 'December 4, 2024'
+image: "Thomas-Fire-Faria-Beach.jpg"
 format:
   html:
     code-fold: true
