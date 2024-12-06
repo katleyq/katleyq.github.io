@@ -27,7 +27,7 @@ The **motivation** for this post is to demonstrate how to use geospatial analysi
 
 ### Github Repository
 
-The full analysis is located in this Github repository: <https://github.com/katleyq/eds220-thomas-fire-final>
+The full analysis is located in this Github repository: <https://github.com/katleyq/thomas-fire-final>
 
 ### Highlights
 
