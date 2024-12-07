@@ -1,12 +1,15 @@
 /*-- scss:defaults --*/
 
 // Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 // Colors 
 $color1: #FEF1C7;
 $color2: #FFB300;
-$color3: #656565;
+//$color3: #656565;
+$color3: #383838;
 $color4: #4C3B4D;
 $color5: #7392B7;
 $color6: #759EB8;
@@ -22,7 +25,6 @@ $link-color: $color5;
 
 /*-- scss: rules --*/
 h1, h2 {
-  letter-spacing: 5px;
   color: $color1;
 }
 
@@ -32,6 +34,14 @@ h1, h2 {
 
 .center-text {
   text-align: center;
+}
+b{
+  color: $color3;
+}
+b,strong {
+  color: black;
+  font-weight: 800;
+  
 }
 
 // can add font families in scss rules

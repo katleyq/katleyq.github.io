@@ -25,9 +25,10 @@ format:
         - lux
         - styles.scss
       dark: 
-        - lux 
+       # - lux 
         - styles.scss
     toc: false
+    mainfont: Nunito Sans
     page-layout: full
 
 editor: visual
